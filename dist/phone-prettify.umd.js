@@ -88,9 +88,9 @@ var isValid = function (phone) { return phone && (/^[0-9]{7,}$/).test(uglify$1(p
 /**
  * L = Local Code
  * A = Area Code
- * n = Line Number
- * e = Extension
- * c = Country Code
+ * N = Line Number
+ * E = Extension
+ * C = Country Code
  * Example:
  *
  * format(phone, '(AAA)-LLL-nnnn');
@@ -100,9 +100,9 @@ var format$1 = function (layout, num, type) {
 	var letters = {
 		areaCode: 'A',
 		localCode: 'L',
-		lineNumber: 'n',
-		extension: 'e',
-		countryCode: 'c'
+		lineNumber: 'N',
+		extension: 'E',
+		countryCode: 'C'
 	};
 	var results = layout;
 
